@@ -1,0 +1,283 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #000000;
+}
+.main{
+    display: flex;
+    flex-direction: row;
+}
+.first{
+    width: 20%;
+    height: auto;
+    border-right: 1px solid rgb(65, 65, 65);
+}
+.second{
+    width: 60%;
+    height: auto;
+    border-right: 1px solid rgb(65, 65, 65);
+}
+
+.icons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.icons a{
+    padding-top: 5%;
+    text-decoration: none;
+    color: white;
+
+}
+.icons i{
+    font-size: 180%;
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.icons i:hover{
+    background-color: #191918;
+}
+.icons img{
+    height: 50px;
+    width: 50px;
+}
+.col-6{
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    color: white;
+    border-bottom: 1px solid #191918;
+}
+.col-6:hover{
+    background-color: #191918;
+}
+#newpost{
+    height: 14vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+#shpost{
+    height: 10vh;
+    border-bottom: 1px solid #191918;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#shpost a{
+    text-decoration: none;
+}
+#post{
+    height: auto;
+    border-bottom: 1px solid #191918;
+    margin: 0;
+    padding: 0;
+}
+#posti{
+    height: 50px;
+    width: 50px;
+}
+#posti img{
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    padding-left: 5%;
+}
+#postd{
+    color: #454545;
+    padding-left: 2%;
+}
+#postd input{
+    outline: none;
+    border: 0;
+    background-color: #000000;
+    font-size: 1.4rem;
+    margin-left: 2%;
+
+}
+#postd input:focus{
+    outline: none;
+    color:white;
+
+}
+#bb{
+    border-bottom: 1px solid #191918;
+    padding-bottom: 2%;
+}
+#bb a{
+    margin-left: 5%;
+    margin-bottom: 2%;
+}
+#tbt{
+    border-bottom: 1px solid #191918;
+    padding-bottom: 2%;
+}
+#tbt button{
+    border: 0;
+    outline: none;
+    border-radius: 16px;
+    padding: 2%;
+    width: 70%;
+    color: white;
+    background-color: #1c9bf1;
+}
+#det1-1 img{
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+}
+#det1{
+    color: #71747a;
+    display: flex;
+    gap: 2%;
+    margin-left: 2%;
+}
+#det1-2{
+    display: flex;
+}
+#det1 p{
+    color: white;
+}
+#det1 i{
+    color: #1c9bf1;
+}
+#det1-2{
+    margin-top: 1%;
+}
+#descr p{
+    margin-left: 9%;
+    color: white;
+}
+#det{
+    margin-bottom: 2%;
+    padding: 0;
+    margin: 0;
+}
+#im2,#im3,#im4{
+    display: flex;
+    justify-content: center;
+}
+#im2 img{
+    display: flex;
+    justify-content: center;
+    border-radius: 12px;
+    height: 64vh;
+}
+#im3 img{
+    display: flex;
+    justify-content: center;
+    border-radius: 12px;
+    height: 40vh;
+}
+#im4 img{
+    display: flex;
+    justify-content: center;
+    border-radius: 12px;
+    height: 71vh;
+}
+#lik{
+    display: flex;
+    justify-content: space-evenly;
+    color: #71747a;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+#lik a{
+     text-decoration: none;
+     color: #71747a;
+}
+#lik i{
+    color: #71747a;
+}
+.search{
+    height: 10vh;
+    margin-top: 15%;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+
+}
+.search input{
+    height: 5vh;
+    width: 88%;
+    border-radius: 25px;
+    background-color: #212227;
+    outline: 0;
+    border: 0;
+    padding-left: 6%;
+    color: white;
+}
+.get-v{
+    height: auto;
+    display: flex;
+    width: 80%;
+    background-color: #212227;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 2%;
+    padding-right: 2%;
+    color: white;
+    border-radius: 12px;
+    padding-bottom: 4%;
+}
+.get-v p{
+    font-weight: 700;
+}
+.get-v button{
+    border: 0;
+    outline: none;
+    border-radius: 16px;
+    padding: 2%;
+    width: 70%;
+    color: white;
+    background-color: #1c9bf1;
+    margin-top: 4%;
+
+}
+.last{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+@media (max-width: 800px) {
+    .last{
+        display: none;
+        width: 0%;
+    }
+    .second{
+        width: 80%;
+    }
+    .last{
+        width: 20%;
+    }
+    #postd input{
+        font-size: 1rem;
+    }
+    #uname{
+        display: none;
+    }
+    #descr p{
+        margin-left: 15%;
+    }
+    #im2 img{
+        height: 30vh;
+    }
+    #im3 img{
+        height: 17vh;
+    }
+    #im4 img{
+        height: 30vh;
+    }
+    #lik a{
+        font-size: .8rem;
+    }
+}
